@@ -1,0 +1,96 @@
+/**大桌面显示布局样式**/
+
+/*大桌面显示器屏宽度度大于等于992小于1200*/
+@media screen and (min-width:992px) and (max-width:1200px) {
+	/**推荐屏幕宽度960**/
+	body>section {
+		width: 100%;
+		height: 445px;
+	}
+	body>section>section {
+		width: 960px;
+		margin: 0px auto;
+	}
+	body>footer {
+		width: 960px;
+		height: 740px;
+		margin: 0px auto;
+		overflow: hidden;
+	}
+	body>section>section>section {
+		width: 758px;
+		height: 415px;
+		float: left;
+	}
+	body>section>section>aside {
+		width: 201px;
+		height: 410px;
+		float: left;
+	}
+	/*电影搜索区*/
+	body>header>section {
+		width: 960px;
+	}
+	body>header>section>aside {
+		width: 16%;
+	}
+	body>header>section>section {
+		width: 84%;
+	}
+	body>header>section>section>#search {
+		width: 300px;
+	}
+	body>header>section>section>#button {
+		width: 100px;
+	}
+}
+/*侧边栏：相关推荐*/
+@media screen and (min-width:992px) and (max-width:1200px) {
+	body>section>section>aside>ul {
+		display: flex;
+		flex-direction: column;
+	}
+	body>section>section>aside>ul>li {
+		flex-basis: 136px;
+		margin: 1px auto;
+	}
+	body>section>section>aside>ul>li>img {
+		width: 162px;
+		height: 100px;
+		display: block;
+		margin: 0px auto;
+	}
+	body>section>section>aside>ul>li>span {
+		width: 162px;
+		height: 18px;
+		display: block;
+		margin: 0px auto;
+	}
+}
+/*底栏:热门推荐*/
+@media screen and (min-width:992px) and (max-width:1200px) {
+	body>footer>div {
+		width: 100%;
+		height: 180px;
+	}
+	body>footer>div>ul {
+		display: flex;
+		flex-direction: row;
+	}
+	body>footer>div>ul>li {
+		flex-basis: 162px;
+		margin: 12px auto;
+	}
+	body>footer>div>ul>li>img {
+		width: 162px;
+		height: 99px;
+		display: block;
+		margin: 0px auto;
+	}
+	body>footer>div>ul>li>span {
+		width: 162px;
+		height: 20px;
+		display: block;
+		margin: 0px auto;
+	}
+}

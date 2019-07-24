@@ -1,0 +1,13 @@
+/**桌面显示布局样式**/
+
+/*桌面显示器屏像宽度大于等于768小于992,相当于普通PC大小*/
+@media screen and (min-width:768px) and (max-width:992px) {
+	/**推荐屏幕宽度720**/
+	/*登陆区*/
+	body>section>section {
+		width: 80%;
+	}
+	body>section>section>section {
+		width: 70%;
+	}
+}

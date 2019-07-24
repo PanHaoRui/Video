@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.dao.UserDao">
+
+<sql id="table">userInfo</sql>
+<sql id="selectFields">loginName,passWord,id,jurisdiction,comedy,action,terror,scienceFiction,cartoon,love,gunplay</sql>
+<insert id="insertUser" parameterType="com.example.demo.model.UserModel" useGeneratedKeys="true" keyProperty="loginName">
+        insert into <include refid="table"/>
+        values(#{loginName}, #{passWord},#{id},#{jurisdiction},#{comedy},#{action},#{terror},#{scienceFiction},#{cartoon},#{love},#{gunplay});
+    </insert>
+	
+	<select id="getUserByLoginName" resultType="com.example.demo.model.UserModel">
+        SELECT
+        <include refid="selectFields"/>
+        FROM
+        <include refid="table"/>
+        WHERE
+         loginName = #{loginName};
+    </select>
+	
+</mapper>

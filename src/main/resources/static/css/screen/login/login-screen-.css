@@ -1,0 +1,25 @@
+/**手机显示布局样式**/
+
+/*[手机端]显示器宽度小于576px，即在移动端（手机端）*/
+@media screen and (max-width:576px) {
+	/**推荐屏幕宽度暂无**/
+	body>section>section {
+		width: 100%;
+		min-width: 540px;
+	}
+	body>header>section>section>#search {
+		width: 200px;
+	}
+	body>header>section>section>#button {
+		width: 70px;
+	}
+
+	/*登陆区*/
+	body>section>section {
+		width: 80%;
+		margin-left: 10%;
+	}
+	body>section>section>section {
+		width: 80%;
+	}
+}

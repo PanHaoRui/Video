@@ -1,0 +1,89 @@
+/**手机显示布局样式**/
+
+/*[手机端]显示器宽度小于576px，即在移动端（手机端）*/
+@media screen and (max-width:576px) {
+	/**推荐屏幕宽度暂无**/
+	body>section>section {
+		width: 100%;
+		min-width: 540px;
+		height: 340px;
+	}
+	body>footer {
+		width: 100%;
+		min-width: 540px;
+		height: 740px;
+		margin: 0px auto;
+		overflow: hidden;
+	}
+	body>section>section>section {
+		width: 100%;
+		min-width: 540px;
+		height: 310px;
+		float: left;
+	}
+	body>section>section>aside {
+		width: 100%;
+		min-width: 540px;
+		height: 200px;
+		float: left;
+	}
+	body>section>section>aside>div:first-child {
+		display: block;
+	}
+	body>header>section>section>#search {
+		width: 200px;
+	}
+	body>header>section>section>#button {
+		width: 70px;
+	}
+}
+/*侧边栏：相关推荐*/
+@media screen and (max-width:576px) {
+	body>section>section>aside>ul {
+		display: flex;
+		flex-direction: row;
+		width: 165%
+	}
+	body>section>section>aside>ul>li {
+		margin: 12px auto;
+	}
+	body>section>section>aside>ul>li>img {
+		width: 162px;
+		height: 110px;
+		display: block;
+		margin: 0px auto;
+	}
+	body>section>section>aside>ul>li>span {
+		width: 162px;
+		height: 20px;
+		display: block;
+		margin: 0px auto;
+	}
+}
+/*底栏:热门推荐*/
+@media screen and (max-width:576px) {
+	body>footer>div {
+		width: 165%;
+		height: 180px;
+	}
+	body>footer>div>ul {
+		display: flex;
+		flex-direction: row;
+	}
+	body>footer>div>ul>li {
+		flex-basis: 162px;
+		margin: 12px auto;
+	}
+	body>footer>div>ul>li>img {
+		width: 162px;
+		height: 99px;
+		display: block;
+		margin: 0px auto;
+	}
+	body>footer>div>ul>li>span {
+		width: 162px;
+		height: 20px;
+		display: block;
+		margin: 0px auto;
+	}
+}

@@ -1,0 +1,21 @@
+/**平板显示布局样式**/
+
+/*[平板端]显示器宽度大于等于576小于768，相当于平板电脑大小的设备*/
+@media screen and (min-width:576px) and (max-width:768px) {
+	/**推荐屏幕宽度540**/
+	body>header>section>section>#search {
+		width: 220px;
+	}
+	body>header>section>section>#button {
+		width: 70px;
+	}
+
+	/*登陆区*/
+	body>section>section {
+		width: 80%;
+	}
+	body>section>section>section {
+		width: 80%;
+		min-width: 500px;
+	}
+}

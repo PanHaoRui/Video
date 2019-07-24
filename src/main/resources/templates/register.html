@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>Insert title here</title>
+    <!--通用结构-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/main/login/login-main.css}"/>
+	<!--皮肤
+	<link rel="stylesheet" type="text/css" th:href="@{/css/skin/login/login-skin-black-green.css}"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/skin/login/login-skin-white-blue.css}"/>
+	-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/skin/login/login-skin-black-green.css}"/>
+	<!--不同显示屏的响应-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/screen/login/login-screen-1140.css}"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/screen/login/login-screen-960.css}"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/screen/login/login-screen-720.css}"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/screen/login/login-screen-540.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/screen/login/login-screen-.css}"/>
+</head>
+<body>
+	<header>
+		<section>
+			<aside>轻视迅</aside>
+			<section>
+			<!--	<input id="search" type="search"  autocomplete="off" placeholder="请输入电影名称" />
+				<button id="button" type="submit">全网搜索</button>-->
+				<aside>
+					<a href="/">登陆</a>	
+					<a href="do_register">注册</a>	
+				</aside>
+			</section>
+		</section>
+	</header>
+	<!--
+	<section style="background: url(/image/login/background-black-green.jpg) no-repeat;">
+	<section style="background: url(/image/login/background-white-blue.jpg) no-repeat;">
+	-->
+	<section style="background: url(image/login/background-black-green.jpg) no-repeat;">
+		<section>
+			<section>
+				<form action="register" method="post">
+					<table>
+						<tr>
+							<td colspan="2">
+								<span></span>
+								<span>.</span>
+								<span>账号注册</span>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="text" name="username" placeholder="请输入账号" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="password" name="password" placeholder="请输入密码" />
+							</td>
+						</tr>
+							<tr>
+							<td colspan="2">
+								<input type="password" name="repassword" placeholder="再次确认密码密码" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<button type="submit">注册</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span id="alert" th:text="${alert}"></span>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</section>
+		</section>
+	</section>
+</body>
+</html>

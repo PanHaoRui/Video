@@ -1,0 +1,101 @@
+/**皮肤样式文件[green]系列**/
+/*播放区背景*/
+body>section {
+	background-color: #262626;
+}
+/*搜索栏背景*/
+body>header {
+	background-color: #1c1c1c;
+}
+/*搜索栏的Logo字体颜色*/
+body>header>section>aside {
+	color: #58a201;
+}
+/*登陆注册字体*/
+body>header>section>section>aside>a {
+	color: #ffffff;
+}
+/*视屏播放区域的字体样式*/
+body>section>section>header>* {
+	color: #58a201;
+}
+
+body>section>section>header>span>a {
+	color: #dddddd;
+}
+/*猜你喜欢*/
+/*不同分辨率下背景样式*/
+@media screen and (min-width:1200px) {
+	body>section>section>aside>ul>li {
+		background-color: #292929;
+	}
+	body>section>section>aside>ul>li>span>a {
+		color: #ffffff;
+	}
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+	body>section>section>aside>ul>li {
+		background-color: #292929;
+	}
+	body>section>section>aside>ul>li>span>a {
+		color: #ffffff;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+	/*猜你喜欢 底色*/
+	body>section>section>aside>ul>li {
+		background-color: #f2f2f2;
+	}
+	/*猜你喜欢 文字颜色*/
+	body>section>section>aside>ul>li>span>a {
+		color: #666666;
+	}
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+	body>section>section>aside>ul>li {
+		background-color: #f2f2f2;
+	}
+	body>section>section>aside>ul>li>span>a {
+		color: #666666;
+	}
+}
+
+@media screen and (max-width:576px) {
+	body>section>section>aside>ul>li {
+		background-color: #f2f2f2;
+	}
+	body>section>section>aside>ul>li>span>a {
+		color: #666666;
+	}
+}
+
+body>section>section>aside>div:first-child>span:first-child {
+	color: #58a201;
+}
+
+body>footer>div:first-child>span:first-child {
+	color: #58a201;
+}
+/*热门列表的背景样式*/
+body>footer>div>ul>li {
+	background-color: #f2f2f2;
+}
+
+body>footer>div:first-child>span:first-child {
+	color: #58a201;
+}
+/*通用视频列表文字提示*/
+ul>li>span>a {
+	color: #666666;
+}
+
+ul>li>span>a:hover {
+	color: #58a201
+}
+/*电影搜索区*/
+body>header>section>section>#button {
+	background-color: #58a201;
+}

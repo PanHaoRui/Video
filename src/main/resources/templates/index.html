@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>Insert title here</title>
+    <!--通用结构-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/main/index/index-main.css}"/>
+	<!--皮肤
+	<link rel="stylesheet" type="text/css" th:href="@{/css/skin/index/index-skin-black-green.css}"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/skin/index/index-skin-white-blue.css}"/>
+	-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/skin/index/index-skin-white-blue.css}"/>
+	<!--不同显示屏的响应-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/screen/index/index-screen-1140.css}"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/screen/index/index-screen-960.css}"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/screen/index/index-screen-720.css}"/>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/screen/index/index-screen-540.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/screen/index/index-screen-.css}"/>
+</head>
+<body>
+	<header>
+		<section>
+			<aside>轻视迅</aside>
+			<section>
+				<input id="search" type="search"  autocomplete="off" placeholder="请输入电影名称" />
+				<button id="button" type="submit">全网搜索</button>		
+				<aside>
+					<span th:if="${session.userModel!=null}" th:text="${session.userModel.loginName}"></span>
+					<a th:if="${session.userModel!=null}" href="quit">退出</a>
+				</aside>
+				<aside>
+					<a th:if="${session.userModel.getJurisdiction()==1}" href="audit">审核视频</a>
+					<a th:if="${session.userModel.getJurisdiction()==0}" href="apply">上传视频</a>
+				</aside>
+			</section>
+		</section>
+	</header>
+	<section>
+		<section>
+			<header>
+				<a href="#">[MV]</a>
+				<span>正在播放:<span th:text="${currentPlayVideo!=null?currentPlayVideo.title:'袁娅维-说散就散'}"></span></span>
+			</header>
+			<section>
+				<video id="Video" controls="controls" autobuffer="yes" autoplay="autoplay">
+				    <source th:src="${currentPlayVideo!=null?currentPlayVideo.videoUrl:'video/袁娅维-说散就散.mp4'}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+				</video>
+			</section>
+			<aside>
+				<div>
+					<span>猜你喜欢</span>
+				</div>
+				<ul>
+					<li th:each="Video:${recommendVideos}">
+						<img th:src="${Video.imageUrl}" />
+						<span>
+						<a th:href="@{/play?videoId={videoId}(videoId=${Video.VideoId})}" class="title" th:text="${Video.title}"></a>
+							
+						</span>
+					</li>
+				</ul>
+			</aside>
+		</section>
+	</section>
+	<footer>
+		<div>
+			<span>热门推荐</span>
+		</div>
+		<div th:each="row:${hotVideos}">
+			<ul>
+				<li th:each="Video:${row}">
+					<img th:src="${Video.imageUrl}" />
+					<span>
+						<a th:href="@{/play?videoId={videoId}(videoId=${Video.videoId})}" class="title" th:text="${Video.title}"></a>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

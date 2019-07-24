@@ -1,0 +1,183 @@
+/**通用基础样式文件**/
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: "microsoft yaHei", 微软雅黑, arial;
+}
+
+body>header {
+	width: 100%;
+	height: 45px;
+	min-width: 540px;
+}
+
+body>section {
+	max-width: 1664px;
+	margin: 0px auto;
+}
+/*电影搜索区*/
+body>header>section {
+	height: 100%;
+	margin: 0px auto;
+}
+
+body>header>section>aside {
+	width: 16%;
+	height: 100%;
+	float: left;
+	/*内容*/
+	text-align: center;
+	line-height: 45px;
+	color: #58a201;
+	font-weight: 700;
+	display: inline-block;
+	font-size: 30px;
+}
+
+body>header>section>section {
+	width: 84%;
+	height: 100%;
+	float: left;
+}
+
+body>header>section>section>#search {
+	width: 300px;
+	height: 30px;
+	margin-top: 7px;
+	margin-left: 50px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+body>header>section>section>#button {
+	width: 100px;
+	height: 30px;
+	margin-top: 7px;
+	line-height: 30px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+}
+
+body>header>section>section>aside {
+	height: 100%;
+	float: right;
+	line-height: 45px;
+}
+
+body>header>section>section>aside>a {
+	/*内容*/
+	line-height: 45px;
+	color: #ffffff;
+	font-weight: 700;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px 10px;
+}
+
+/*登陆区*/
+body>section>section {
+	height: 500px;
+	margin: 100px auto 0px auto;
+}
+
+body>section>section>section {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+body>section>section>section>form {
+	width: 100%;
+	height: 100%;
+}
+
+body>section>section>section>form>table {
+	width: 100%;
+	height: 90%;
+	margin-top: 10%;
+	font-weight: 200;
+	font-size: 18px;
+}
+
+body>section>section>section>form>table input {
+	width: 80%;
+	height: 65%;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+body>section>section>section>form>table a {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+body>section>section>section>form>table button {
+	width: 80%;
+	height: 65%;
+	border-radius: 10px;
+	background-color: #438eb9;
+	font-size: 18px;
+}
+
+body>section>section>section>form>table tr {
+	height: 16%;
+}
+/*表格第一行*/
+body>section>section>section>form>table tr:first-child td span:nth-child(1)
+	{
+	width: 20%;
+	/*内容*/
+	text-align: center;
+	font-weight: 500;
+	font-size: 30px;
+}
+
+body>section>section>section>form>table tr:first-child td span:nth-child(2)
+	{
+	width: 20%;
+	/*内容*/
+	text-align: center;
+	font-weight: 500;
+	font-size: 50px;
+}
+
+body>section>section>section>form>table tr:first-child td span:nth-child(3)
+	{
+	width: 20%;
+	/*内容*/
+	text-align: center;
+	font-weight: 700;
+	display: inline-block;
+	font-size: 20px;
+}
+
+body>section>section>section>form>table tr:last-child td {
+	height: 50px;
+	line-height: 50px;
+}
+
+body>section>section>section>form>table tr:last-child td img {
+	width: 30px;
+	height: 30px;
+	display: block;
+	float: left;
+	margin: 5px 5px;
+}
+
+body>section>section>section>form>table tr:last-child td span {
+	width: auto;
+	height: 40px;
+	display: block;
+	line-height: 40px;
+	float: left;
+}
+
+body>section>section>section>form>table tr:last-child td span:nth-child(1)
+	{
+	font-weight: 700;
+	font-size: 16px;
+}

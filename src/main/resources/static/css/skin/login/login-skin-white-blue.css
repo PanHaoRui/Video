@@ -1,0 +1,55 @@
+﻿/**皮肤样式文件[blue]系列**/
+/*登陆页面背景*/
+body {
+	background-color: #ffffff;
+}
+/*搜索栏背景*/
+body>header {
+	background-color: #438eb9;
+}
+/*搜索栏的Logo字体颜色*/
+body>header>section>aside {
+	color: #ffffff;
+}
+/*电影搜索区*/
+body>header>section>section>#button {
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	background-color: #1f1f1f1f;
+	color: #ffffff;
+}
+/*登陆*/
+body>section>section>section>form>table a {
+	color: #438eb9;
+}
+
+body>section>section>section>form>table button {
+	border: 1px solid #ffffff;
+	background-color: #438eb9;
+	color: #ffffff;
+}
+
+body>section>section>section>form>table input {
+	border: 1px solid #ffffff;
+	padding-left: 5px;
+}
+/*表格第一行*/
+body>section>section>section>form>table tr:first-child td span:nth-child(1)
+	{
+	color: #438eb9;
+}
+
+body>section>section>section>form>table tr:first-child td span:nth-child(2)
+	{
+	color: #438eb9;
+}
+
+body>section>section>section>form>table tr:first-child td span:nth-child(3)
+	{
+	color: #438eb9;
+}
+
+body>section>section>section>form>table tr:last-child td span:nth-child(1)
+	{
+	color: #438eb9;
+}

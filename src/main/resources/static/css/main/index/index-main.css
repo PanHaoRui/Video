@@ -1,0 +1,159 @@
+/**通用基础样式文件**/
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: "microsoft yaHei", 微软雅黑, arial;
+}
+
+/*通用视频列表文字提示*/
+ul>li>span>a {
+	font-weight: 700;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+}
+
+ul>li>span>a.title {
+	font-size: 13px;
+}
+
+body>header {
+	width: 100%;
+	height: 45px;
+	min-width: 540px;
+}
+/*视屏播放区域的字体样式*/
+body>section>section>header>* {
+	font-weight: 700;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+body>section>section>header>span>a {
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 12px;
+}
+
+body>section>section>header {
+	width: 100%;
+	height: 30px;
+}
+/*播放器*/
+body>section>section>section>video {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+/*推荐列表*/
+body>section>section>aside {
+	overflow: hidden;
+}
+
+/*电影搜索区*/
+body>header>section {
+	height: 100%;
+	margin: 0px auto;
+}
+
+body>header>section>aside {
+	width: 16%;
+	height: 100%;
+	float: left;
+	/*内容*/
+	text-align: center;
+	line-height: 45px;
+	font-weight: 700;
+	display: inline-block;
+	font-size: 30px;
+}
+/*电影搜索区*/
+body>header>section>section {
+	width: 84%;
+	height: 100%;
+	float: left;
+}
+
+body>header>section>section>#search {
+	width: 300px;
+	height: 30px;
+	margin-top: 7px;
+	margin-left: 50px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+}
+
+body>header>section>section>#button {
+	width: 100px;
+	height: 30px;
+	margin-top: 7px;
+	line-height: 30px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+}
+
+body>header>section>section>aside {
+	height: 100%;
+	float: right;
+	line-height: 45px;
+}
+
+body>header>section>section>aside>a {
+	/*内容*/
+	line-height: 45px;
+	font-weight: 700;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px 10px;
+}
+/*猜你喜欢*/
+body>section>section>aside>div:first-child {
+	display: none;
+	width: 100%;
+	height: 20px;
+	line-height: 40px;
+}
+
+body>section>section>aside>div:first-child>span:first-child {
+	font-weight: 700;
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+body>footer>div:first-child {
+	line-height: 40px;
+	width: 100%;
+	height: 20px;
+}
+
+body>footer>div:first-child>span:first-child {
+	font-weight: 700;
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	font-size: 16px;
+	padding-left: 10px;
+}
+/*热门列表的背景样式*/
+body>footer>div:first-child {
+	width: 100%;
+	height: 20px;
+}
+
+body>footer>div:first-child>span:first-child {
+	font-weight: 700;
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	font-size: 16px;
+	padding-left: 10px;
+}

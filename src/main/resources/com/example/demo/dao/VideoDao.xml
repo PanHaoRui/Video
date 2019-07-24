@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.dao.VideoDao">
+
+<sql id="table">videoInfo</sql>
+	<select id="getVideosByType" resultType="com.example.demo.model.VideoModel">
+        SELECT
+        *
+        FROM
+        <include refid="table"/>
+        WHERE
+         type = #{maxType};
+    </select>
+    
+    <insert id="insertVideo" parameterType="com.example.demo.model.VideoModel" useGeneratedKeys="true" keyProperty="videoId">
+        insert into <include refid="table"/>
+        values(#{videoId}, #{title}, #{imageUrl}, #{videoUrl}, #{introduction},#{type}, #{number},#{state});
+    </insert>
+    
+    
+    <select id="getVideoByVideoId" resultType="com.example.demo.model.VideoModel">
+        SELECT
+        *
+        FROM
+        <include refid="table"/>
+        WHERE
+         videoId = #{videoId};
+    </select>
+    <select id="getVideosByNumber" resultType="com.example.demo.model.VideoModel">
+        SELECT 
+       	*
+        FROM
+        <include refid="table"/>
+       order by number desc
+        limit 20
+    </select>
+	
+</mapper>

@@ -1,0 +1,15 @@
+/**超大桌面显示布局样式**/
+
+/*超大桌面显示器屏宽度度大于等于1200*/
+@media screen and (min-width:1200px) {
+	/**推荐屏幕宽度1140**/
+	/*电影搜索区*/
+	body>header>section {
+		width: 1200px;
+	}
+
+	/*登陆区*/
+	body>section>section {
+		width: 960px;
+	}
+}

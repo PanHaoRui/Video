@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		   <meta charset="UTF-8"/>
+	</head>
+<body>
+<title>请填写相关信息，并提交审核</title>
+<form method="POST" action="/upload" enctype="multipart/form-data">
+   上传视频:<input type="file" name="video" accept="video/*" multiple="multiple"/><br/>
+   上传封面:<input type="file" name="image" accept="image/*" multiple="multiple"/><br/>
+   视频标题:<input type="text" name="title"/><br/>
+   视频类型:<select name="type" size="1">
+   				<option value="terror">恐怖</option>
+   				<option value="comedy">喜剧</option>
+   				<option value="action">动作</option>
+   				<option value="cartoon">卡通</option>
+   				<option value="love">爱情</option>
+   				<option value="gunplay">枪战</option>
+   				<option value="scienceFiction">科幻</option>
+   				<option value="other">其他</option>
+   			</select><br/>
+   视频简介:<br />
+   <textarea cols="50" rows="5" name="introduction"></textarea><br/>
+   <input type="submit" value="提交审核" />
+</form>
+</body>
+</html>
